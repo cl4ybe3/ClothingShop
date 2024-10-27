@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clothing Store</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="Webshop logo">
+                </div>
+                <ul class="navigation-menu">
+                    <li><img src="/images/home.png" alt="főoldal"><a href="#">Főoldal</a></li>
+                    <li><img src="/images/product.png" alt="Termékek"><a href="#">Termékek</a></li>
+                    <li><img src="/images/megaphone.png" alt="Újdonságok"><a href="#">Újdonságok</a></li>
+                    <li><img src="/images/discount.png" alt="Akciók"><a href="#">Akciók</a></li>
+                    <li><img src="/images/communicate.png" alt="Kapcsolat"><a href="#">Kapcsolat</a></li>
+                </ul>
+                <div class="login-register">
+                    <p class="login" id="login">Bejelentkezés</p>
+                    <p class="register" id="register">Regisztráció</p>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="hero-section">
+                <img src="/images/heroimg.png" alt="ourclothes">
+                <button>Fedezd fel most!</button>
+            </div>
+        </main>
+        <section class="clothing-category">
+            <div class="woman-type">
+                <h2>Női Kiegészítők</h2>
+                <img src="/images/womanclothes.png" alt="Női kiegészítők">
+            </div>
+            <div class="man-type">
+                <h2>Férfi kiegészítők</h2>
+                <img src="/images/manclothes.png" alt="Férfi kiegészítők">
+            </div>
+        </section>
+        <h2 class="famous-clothes">Legnépszerűbb Termékek</h2>
+        <div class="store-cart">
+            <div class="ruha1">
+                <img src="/images/1_org_zoom-removebg-preview.png" alr="ruha">
+                <p>4 999ft</p>
+                <button>Kosárba</button>
+            </div>
+            <div class="ruha2">
+                <img src="/images/images__3_-removebg-preview.png" alt="ruha">
+                <p>6 999ft</p>
+                <button>kosárba</button>
+            </div>
+            <div class="ruha3">
+                <img src="/images/scubapro_sport_3_ferfi_ruha_eleje-OYICRZ-removebg-preview.png" alt="ruha">
+                <p>1 099ft</p>
+                <button>Kosárba</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h2>Kapcsolat</h2>
+        <P><img src="/images/gmail.png" alt="G-mail">E-mail: <a href="#">clothing@gmail.com</a></p>
+        <p><img src="/images/phone.png" alt="telephone">Tel.: <a href="#">+36 70 280 1391</a></p>
+        <p><img src="/images/facebook.png" alt="facebook">Facebook: <a href="#">Hamarosan</a></p>
+        <p><img src="/images/instagram.png" alt="instagram">Instagram: <a href="#">Hamarosan</a></p>
+        <p class="copyright"><strong>Copyright © 2024 Clorhing Shop. All Rights Reserved.</strong></p>
+    </footer>
+    
+    <div class="register-container" id="register-container">
+        <h3>Regisztráció</h3>
+        <img id="closing-register" src="/images/close.png">
+        <form action="/submit_form" method="POST">
+            <label for="username">Felhasználónév:</label>
+            <br>
+            <input type="text" id="username" placeholder="Felhasználónév" required>
+            <br>
+            <label for="email">E-mail: </label>
+            <br>
+            <input type="email" id="email" placeholder="E-mail" required>
+            <br>
+            <label for="password">Jelszó:</label>
+            <br>
+            <input type="password" id="password" placeholder="Jelszó" required>
+            <br>
+            <label for="password-again">Jelszó újra:</label>
+            <br>
+            <input type="password" id="password-again" placeholder="Jelszó újra" required>
+            <br>
+            <button id="register-submit" type="submit">Regisztrálás</button>
+            <p id="register-confirm">A jelszavak nem egyeznek!</p>
+        </form>
+    </div>
+    <div class="login-container" id="login-container">
+        <h3>Bejelentkezés</h3>
+        <img id="closing-login" src="/images/close.png">
+        <form action="/submit_form" method="POST">
+            <label for="username">Felhasználónév: </label>
+            <br>
+            <input type="text" id="username" placeholder="Felhasználónév" required>
+            <br>
+            <label for="password">Jelszó: </label>
+            <br>
+            <input type="password" id="password" placeholder="jelszó" required>
+            <br>
+            <button type="submit">Bejelentkezés</button>
+
+        </form>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
